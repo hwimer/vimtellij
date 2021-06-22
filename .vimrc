@@ -60,7 +60,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 
+" THEME
 Plug 'morhetz/gruvbox'
+Plug 'joshdick/onedark.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -68,7 +70,9 @@ call plug#end()
 
 "STYLE =============================================
 "Theme
-colorscheme gruvbox 
+"colorscheme gruvbox
+"colorscheme onehalflight
+colorscheme onedark
 "Syntax HIghlighting
 if has ("syntax")
 	syntax on
