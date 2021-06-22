@@ -30,19 +30,9 @@ set fileencodings=utf-8
 set termencoding=utf-8
 set encoding=utf-8
 
-"Vundle, Plugin ===================================
-"  set rtp+=./.vim/bundle/Vundle.vim
-" call vundle#begin('./.vim/bundle/')
-" Plugin 'scrooloose/nerdtree'
-" Plugin 'AutoComplPop'
-" Plugin 'taglist-plus' 
-" Plugin 'morhetz/gruvbox' "Theme 
-" Plugin 'powerline/powerline-fonts' "Font
-" call  vundle#end()
-
 
 "vim-plug ==========================================
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/vimtellij/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 
 " Any valid git URL is allowed
