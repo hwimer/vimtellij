@@ -32,7 +32,7 @@ set encoding=utf-8
 
 
 "vim-plug ==========================================
-call plug#begin('~/vimtellij/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 
 " Any valid git URL is allowed
