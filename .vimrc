@@ -40,10 +40,10 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 ""Plug 'neoclide/coc.nvim'
 " Multiple Plug commands can be written in a single line using | separators
-Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+"Plug 'majutsushi/tagbar'
 
 " Using a non-default branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
@@ -70,9 +70,9 @@ call plug#end()
 
 "STYLE =============================================
 "Theme
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme onehalflight
-colorscheme onedark
+"colorscheme onedark
 "Syntax HIghlighting
 if has ("syntax")
 	syntax on
@@ -102,20 +102,9 @@ set guifont=Hack\ h30
 " shortCut 
 "map <C-1> : helloworld
 map <F9> :NERDTree<CR>
+"nmap <F8> :TagbarToggle<CR>
 "map <F9> :NERDTreeToggle<CR>
 "nmap nerd :NERDTreeToggle<CR>
 "nmap <alt> + 1 :NERDTreeToggle<CR>
 "map <F9> :call NERDTreeToToggleAndRefresh()<CR>
 
-
-"function NERDTreeToToggleAndRefresh()
-":NERDTreeToggle
-"if g:NERDTree.IsOpen()
-"	:NERDTreeRefreshRoot
-"endif
-"endfunction
-
-"imap <S-Insert>:p
-"map <S-Insert> <C-r>
-"map! <S-Insert> <C-r>
-"imap <F7>:무야호 
