@@ -15,12 +15,10 @@ git clone https://github.com/hwimer/vimtellij.git ~/
 
 
 
-
-### 2. INSTALL MANAGER FROM GIT 
+### 2. INSTALL Plug MANAGER [plug.vim] 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 ```
-
 
 
 
