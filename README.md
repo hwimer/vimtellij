@@ -1,11 +1,11 @@
-### 0.  
+### PREPARATIONS LIST
+- neovim (brew install) 
+- python 3.8.12
+- pyenv (for install python) 
 
-### 1. INSTALL NEOVIM 
-```
-$ brew install neovim
-```
 
-### 1.CLONE SOURCE 
+
+### 1.CLONE SOUR nvim) 
 ```
 $ git clone https://github.com/hwimer/vimtellij.git ~/
 $ cp ~/vimtellij/init.vim ~/.config/nvim/
@@ -21,7 +21,7 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercon
 
 
 ### 3. PlugInstall
-> please install plugin via command 
+> please install plugin via below command 
 ```
 cd ~/.config/nvim
 $ nvim ~/.config/nvim/init.vim
