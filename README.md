@@ -1,23 +1,21 @@
-### 0. CHANGE DEFAULT PATH OF VIM 
+### 0.  
 
-> set these value on your .bashrc file
+### 1. INSTALL NEOVIM 
 ```
-export VIMINIT='source $MYVIMRC'
-export MYVIMRC='~/vimtellij/.vimrc'  #or any other location you want
+$ brew install neovim
 ```
-
-
 
 ### 1.CLONE SOURCE 
 ```
-git clone https://github.com/hwimer/vimtellij.git ~/
+$ git clone https://github.com/hwimer/vimtellij.git ~/
+$ cp ~/vimtellij/init.vim ~/.config/nvim/
 ```
 
 
 
 ### 2. INSTALL Plug MANAGER [plug.vim] 
 ```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
 ```
 
 
@@ -25,7 +23,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubuserconte
 ### 3. PlugInstall
 > please install plugin via command 
 ```
-$ vi vimtellij/.vimrc
+cd ~/.config/nvim
+$ nvim ~/.config/nvim/init.vim
 :PlugInstall
 :source %
 ```
