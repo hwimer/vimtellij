@@ -25,6 +25,6 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercon
 ```
 cd ~/.config/nvim
 $ nvim ~/.config/nvim/init.vim
-:PlugInstall
+:PlugInstall or $ nvim +PlugInstall
 :source %
 ```

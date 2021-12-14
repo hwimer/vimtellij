@@ -1,7 +1,10 @@
 
+set cursorline
+"set cursorcolumn
+
 set hlsearch 
 set nu
-
+set rnu
 set scrolloff=2
 set ts=4
 set sts=4
@@ -30,15 +33,17 @@ set encoding=utf-8
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/vim-easy-align'
-Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Plug 'valloric/youcompleteme'
 " Plug 'neoclide/coc.nvim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug '~/my-prototype-plugin'
 
 Plug 'morhetz/gruvbox'
@@ -61,5 +66,19 @@ endif
 set guifont=Hack\ h30
 
 
-map <F9> :NERDTree<CR>
-nnoremap <C-t> : NERDTreeToggle<CR>
+
+" Key map
+
+" open fuzzy finding for files
+" Wonderfull mapping
+inoremap <C-c> <esc>
+let mapleader = " "
+nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>ps :Rg<CR>
+
+
+" NERDTREE option
+let NERDTreeMinimalUI=1
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
+nnoremap <leader>n :NERDTreeToggle<CR>
